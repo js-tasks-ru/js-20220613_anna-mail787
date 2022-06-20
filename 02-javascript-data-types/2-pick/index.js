@@ -6,4 +6,7 @@
  */
 export const pick = (obj, ...fields) => {
 
+  const pickedObject = Object.fromEntries(Object.entries(obj).filter(entry => fields.includes(entry[0])));
+
+  return pickedObject;
 };
