@@ -58,15 +58,6 @@ export default class ColumnChart {
         return `<div style="--value: ${value}" data-tooltip="${percent}%"></div>`;
       })
       .join('');
-    // const maxValue = Math.max(...data);
-    // const scale = this.chartHeight / maxValue;
-    // const columns = this.data.map((item) => {
-    //   const percent = ((item / maxValue) * 100).toFixed(0);
-    //
-    //   return `<div style="--value: ${Math.floor(item * scale)}" data-tooltip="${percent}"></div>`
-    // }).join('');
-    //
-    // return columns;
   }
 
   getSubElements() {
